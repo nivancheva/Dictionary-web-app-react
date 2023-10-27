@@ -1,1 +1,49 @@
+@font-face {
+  font-family: 'Inconsolta';
+  src: url('./assets/fonts/inconsolata/static/Inconsolata-Regular.ttf') format("truetype");
+  src: url('./assets/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format("truetype-variations");
+  font-weight: 400;
+}
 
+@font-face {
+  font-family: 'Inconsolta';
+  src: url('./assets/fonts/inconsolata/static/Inconsolata-Bold.ttf') format("truetype");
+  src: url('./assets/fonts/inconsolata/Inconsolata-VariableFont_wdth,wght.ttf') format("truetype-variations");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/inter/static/Inter-Regular.ttf') format("truetype");
+  src: url('./assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('./assets/fonts/inter/static/Inter-Bold.ttf') format("truetype");
+  src: url('./assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format("truetype-variations");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/fonts/lora/static/Lora-Regular.ttf') format("truetype");
+  src: url('./assets/fonts/lora/Lora-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/fonts/lora/static/Lora-Bold.ttf') format("truetype");
+  src: url('./assets/fonts/lora/Lora-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('./assets/fonts/lora/static/Lora-BoldItalic.ttf') format("truetype");
+  src: url('./assets/fonts/lora/Lora-Italic-VariableFont_wght.ttf') format("truetype-variations");
+  font-weight: 700;
+  font-style: italic;
+}
