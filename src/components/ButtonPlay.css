@@ -1,0 +1,15 @@
+.button_play {
+    border: 0;
+    outline: none;
+    background: inherit;
+    width: 4.6875rem;
+    cursor: pointer;
+}
+  
+.button_play:hover svg circle {
+    opacity: 1;
+}
+
+.button_play:hover svg path {
+    fill: var(--clr-white);
+}

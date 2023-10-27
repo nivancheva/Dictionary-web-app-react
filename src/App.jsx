@@ -1,10 +1,11 @@
-import './App.css'
+import './App.css';
+import ButtonPlay from './components/ButtonPlay';
 
 function App() {
 
   return (
     <div>
-      Hello world
+      <ButtonPlay />
     </div>
   )
 }
