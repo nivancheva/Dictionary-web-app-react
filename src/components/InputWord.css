@@ -1,0 +1,33 @@
+.input_word {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: var(--clr-grey-300);
+    border-radius: .75em;
+    padding-block: 1.25rem;
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--clr-dark-700);
+    text-transform: lowercase;
+}
+
+.input_word:active {
+    outline: 1px solid var(--clr-purple);
+}
+
+.input_word::placeholder {
+    color: var(--clr-grey-500);
+    text-transform: none;
+}
+
+.input {
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translate(0, -50%);
+}
