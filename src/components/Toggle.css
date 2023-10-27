@@ -73,7 +73,7 @@ input:checked + .slider:before {
 }
 
 .moon-img svg {
-    stroke: #838383;
+    stroke: var(--clr-grey-500);
 }
 
 .toggle-dark:hover .moon-img svg {
