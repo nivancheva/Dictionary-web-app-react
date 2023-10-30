@@ -2,8 +2,9 @@
     border: 0;
     outline: none;
     background: inherit;
-    width: 4.6875rem;
+    width: 48px;
     cursor: pointer;
+    padding: 0;
 }
   
 .button_play:hover svg circle {
@@ -12,4 +13,10 @@
 
 .button_play:hover svg path {
     fill: var(--clr-white);
+}
+
+@media (min-width:768px) {
+    .button_play {
+        width: 75px;
+    }
 }

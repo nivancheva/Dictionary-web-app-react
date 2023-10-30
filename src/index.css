@@ -64,6 +64,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 img, picture, video, canvas, svg {
@@ -79,4 +80,3 @@ input, button, textarea, select {
   display: flex;
   align-items: center;
 }
-

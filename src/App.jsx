@@ -6,7 +6,7 @@ import InputWord from './components/InputWord';
 function App() {
 
   return (
-    <div>
+    <div className='container'>
       <ButtonPlay />
 
       <Toggle />
