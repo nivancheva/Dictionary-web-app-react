@@ -1,19 +1,19 @@
 import './App.css';
-import ButtonPlay from './components/ButtonPlay';
-import InputWord from './components/InputWord';
 import Navigation from './components/Navigation';
+import InputWord from './components/InputWord';
+import WordMeaningSection from './components/WordMeaningSection';
 
 function App() {
 
   return (
     <div className='container'>
+
       <Navigation />
 
       <InputWord />
-      
-      <ButtonPlay />
 
-      
+      <WordMeaningSection />
+   
     </div>
   )
 }
