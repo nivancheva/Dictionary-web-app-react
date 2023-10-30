@@ -8,9 +8,12 @@ function App() {
   return (
     <div className='container'>
       <Navigation />
-      <ButtonPlay />
 
       <InputWord />
+      
+      <ButtonPlay />
+
+      
     </div>
   )
 }
