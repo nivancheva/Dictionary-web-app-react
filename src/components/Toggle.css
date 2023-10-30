@@ -61,7 +61,7 @@ input:checked + .slider:before {
 }
 
 .toggle-dark {
-    gap: 1.25rem;
+    gap: .75rem;
 }
 
 .toggle-dark:hover {
@@ -82,4 +82,10 @@ input:checked + .slider:before {
 
 .toggle-dark:hover .slider {
     background-color: var(--clr-purple);
+}
+
+@media (min-width:768px) {
+    .toggle-dark {
+        gap: 1.25rem;
+    }
 }

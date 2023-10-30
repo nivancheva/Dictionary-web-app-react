@@ -54,6 +54,7 @@
   --clr-white: rgb(255, 255, 255);
   --clr-grey-200: rgb(244, 244, 244);
   --clr-grey-300: rgb(233, 233, 233);
+  --clr-grey-400: rgb(151, 151, 151);
   --clr-grey-500: rgb(117, 117, 117);
   --clr-black: rgb(5, 5, 5);
   --clr-dark-800: rgb(31, 31, 31);
@@ -79,4 +80,12 @@ input, button, textarea, select {
 .flex {
   display: flex;
   align-items: center;
+}
+
+button {
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
 }
