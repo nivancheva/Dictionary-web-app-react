@@ -2,17 +2,32 @@ import './App.css';
 import Navigation from './components/Navigation';
 import InputWord from './components/InputWord';
 import WordMeaningSection from './components/WordMeaningSection';
+import { useState } from 'react';
 
 function App() {
+  const [getWord, setGetword] = useState(null);
+
+  async function searchWordMeaning(word) {
+      const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
+      if (response.ok) {
+        const wordMeaning = await response.json();
+        setGetword(wordMeaning[0]);
+      }  
+  }
+
+  function handleSubmit(word) {
+    searchWordMeaning(word);
+  }
+
 
   return (
     <div className='container'>
-
+      
       <Navigation />
 
-      <InputWord />
+      <InputWord onSubmit={handleSubmit} />
 
-      <WordMeaningSection />
+      <WordMeaningSection word={getWord} />
    
     </div>
   )

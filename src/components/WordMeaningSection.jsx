@@ -1,16 +1,19 @@
 import ButtonPlay from '../components/ButtonPlay';
 import './WordMeaningSection.css';
 
-export default function WordMeaningSection() {
+export default function WordMeaningSection({word}) {
     return (
         <div>
-            <div className='word flex'>
+            {word && (
+                <div className='word flex'>
                 <div>
-                    <p className='input-word'>keybord</p>
-                    <p className='input-word_pronunciation'>/ˈkiːbɔːd/</p>
+                    <p className='input-word'>{word.word}</p>
+                    <p className='input-word_pronunciation'>{word.phonetics[1].text}</p>
                 </div>
-                <ButtonPlay />
-            </div>
+                <ButtonPlay audioUrl={word.phonetics[1].audio} />
+
+                </div>
+            )}
             
         </div>
     )
