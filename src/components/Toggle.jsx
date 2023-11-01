@@ -1,10 +1,21 @@
-import './Toggle.css'
+import './Toggle.css';
+
 
 export default function Toggle() {
+    
+    function toggleDarkMode() {
+        let element = document.body;
+        element.classList.toggle("dark-mode");
+    }
+
+
     return (
         <div className='flex toggle-dark'>
             <label className="switch">
-                <input type="checkbox" />
+                <input 
+                    type="checkbox"
+                    onClick={toggleDarkMode}
+                />
                 <span className="slider round"></span>
             </label>
 

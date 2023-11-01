@@ -1,3 +1,66 @@
+.word-wrapper {
+    display: grid;
+    gap: 2.5rem;
+}
+
 .word {
     justify-content: space-between;
+}
+
+.input-word {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.meanings-list {
+    list-style: none;
+}
+
+.meanings-list li::before {
+    content: "\2022";  
+    color: var(--clr-purple); 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+}
+
+.meaning-heading {
+    color: var(--clr-grey-500);
+}
+
+.part-of-speach {
+    color: var(--clr-dark-700);
+    font-style: italic;
+    font-weight: 700;
+    position: relative;
+}
+
+.part-of-speach::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 1px;
+    transform: translate(0, 50%);
+    background-color:var(--clr-grey-400);
+}
+
+.synonyms {
+    gap: 1.375rem;
+    color: var(--clr-purple);
+    margin-left: .5rem;
+}
+
+.word_source {
+    gap: 1.5625rem;
+}
+
+.word_source p {
+    text-decoration: underline;
+}
+
+.icon_newwindow {
+    margin-left: 8px;
 }
