@@ -33,6 +33,16 @@
     transform: translate(0, -50%);
 }
 
+.errors {
+    position: absolute;
+    bottom: -50%;
+    color: var(--clr-red);
+}
+
+.inputIfError {
+    outline: 1px solid var(--clr-red);
+}
+
 @media (min-width:768px) {
     .input {
         margin-bottom: 3.125rem;
