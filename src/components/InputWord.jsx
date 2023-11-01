@@ -6,11 +6,11 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 
 const schema = yup.object({
-    word: yup.string().required(),
+    word: yup.string().required('Whoops, can’t be empty…'),
   }).required();
 
 export default function InputWord({onSubmit}) {
-    const { register, handleSubmit, formState:{ errors } } = useForm({
+    const { handleSubmit, formState:{ errors } } = useForm({
         resolver: yupResolver(schema)
       });
 
