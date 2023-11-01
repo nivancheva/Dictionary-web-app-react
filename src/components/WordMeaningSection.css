@@ -12,6 +12,11 @@
     font-weight: 700;
 }
 
+.input-word_pronunciation {
+    color: var(--clr-purple);
+    font-size: 1.5rem;
+}
+
 .meanings-list {
     list-style: none;
 }
@@ -27,6 +32,11 @@
 
 .meaning-heading {
     color: var(--clr-grey-500);
+    font-size: 1.25rem;
+}
+
+.meaning {
+    margin-bottom: 1.0625rem;
 }
 
 .part-of-speach {
@@ -34,6 +44,11 @@
     font-style: italic;
     font-weight: 700;
     position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.definition {
+    font-size: .9375rem;
 }
 
 .part-of-speach::after {
@@ -41,10 +56,14 @@
     position: absolute;
     top: 50%;
     right: 0;
-    left: 0;
+    left: 6rem;
     height: 1px;
-    transform: translate(0, 50%);
     background-color:var(--clr-grey-400);
+    opacity: .5;
+}
+
+.synonyms-heading {
+    margin-top: 1.5rem;
 }
 
 .synonyms {
@@ -55,12 +74,45 @@
 
 .word_source {
     gap: 1.5625rem;
+    position: relative;
+    margin-bottom: 5.3125rem;
+    font-size: .875rem;
+}
+
+.word_source::after {
+    content: '';
+    position: absolute;
+    top: -100%;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background-color:var(--clr-grey-400);
+    opacity: .5;
 }
 
 .word_source p {
     text-decoration: underline;
+    font-size: .875rem;
 }
 
 .icon_newwindow {
     margin-left: 8px;
+}
+
+@media (min-width:786px) {
+    .part-of-speach {
+        margin-bottom: 2.5rem;
+    }
+
+    .meaning {
+        margin-bottom: 1.5625rem;
+    }
+
+    .synonyms-heading {
+        margin-top: 2.5rem;
+    }
+
+    .word_source {
+        margin-bottom: 7.5rem;
+    }
 }

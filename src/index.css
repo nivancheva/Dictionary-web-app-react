@@ -77,6 +77,11 @@ input, button, textarea, select {
   font: inherit;
 }
 
+body {
+  font-family: 'Inter';
+  min-height: 100vh;
+}
+
 .flex {
   display: flex;
   align-items: center;

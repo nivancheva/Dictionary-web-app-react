@@ -9,7 +9,7 @@ export default function Navigation() {
             <img src={logo}/>
             <div className='header-nav flex'>
                 <div className='font-family flex'>
-                    <p className='font-family-style'>Mono</p>
+                    <p className='font-family-style'>Sans-Serif</p>
                     <button className='arrow-down'><img src={iconArrowDown}/></button>
                 </div>
                 <Toggle />

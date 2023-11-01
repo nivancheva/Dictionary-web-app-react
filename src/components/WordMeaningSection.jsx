@@ -20,18 +20,18 @@ export default function WordMeaningSection({word}) {
                             return (
                                 <div key={index}>
                                     <p className='part-of-speach'>{wordMeaning.partOfSpeech}</p>
-                                    <h3 className='meaning-heading'>Meaning</h3>
+                                    <p className='meaning-heading meaning'>Meaning</p>
                                     <ul className='meanings-list'>
                                         {(wordMeaning.definitions).map((meaning, idx) => {
                                             return (
-                                                <li key={idx}>{meaning.definition}</li>
+                                                <li key={idx} className='definition'>{meaning.definition}</li>
                                             )
                                         })}
                                     </ul>
                                     {wordMeaning.synonyms.length > 0 && (
 
-                                        <div className='flex'>
-                                            <h3 className='meaning-heading'>Synonyms</h3>
+                                        <div className='flex synonyms-heading'>
+                                            <p className='meaning-heading'>Synonyms</p>
                                             {wordMeaning.synonyms.map((synonyms, idx) => {
                                                 return (
                                                     <p key={idx} className='flex synonyms'>{synonyms}</p>
@@ -41,8 +41,8 @@ export default function WordMeaningSection({word}) {
                                     )}
 
                                     {wordMeaning.antonyms.length > 0 && (
-                                        <div className='flex'>
-                                            <h3 className='meaning-heading'>Antonyms </h3>
+                                        <div className='flex synonyms-heading'>
+                                            <p className='meaning-heading'>Antonyms </p>
                                             {wordMeaning.antonyms.map((antonyms, idx) => {
                                                 return (
                                                     <p key={idx} className='flex synonyms'>{antonyms}</p>
@@ -56,7 +56,7 @@ export default function WordMeaningSection({word}) {
                     </div>
 
                     <div className='flex word_source'>
-                        <p>Source</p>
+                        <p className='meaning-heading'>Source</p>
                         <div className='flex'>
                             <a href={word.phonetics[1].sourceUrl}>{word.phonetics[1].sourceUrl}</a>
                             <img className='icon_newwindow' src={iconNewWindow}/>
