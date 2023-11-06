@@ -1,0 +1,12 @@
+.no-data {
+    text-align: center;
+}
+
+.emoji {
+    font-size: 3rem;
+}
+
+.no-found {
+    margin-block: 2.75rem 1.5rem;
+    font-weight: 700;
+}

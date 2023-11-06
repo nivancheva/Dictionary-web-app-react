@@ -1,5 +1,6 @@
 .container {
-    margin-inline: 1.5rem;    
+    margin-inline: 1.5rem;
+    position: relative;
 }
 
 @media (min-width:768px) {

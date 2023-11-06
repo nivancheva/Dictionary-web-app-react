@@ -105,10 +105,9 @@ input, button, textarea, select {
 }
 
 body {
-  min-height: 100vh;
-  
   color: var(--clr-text);
   background-color: var(--clr-background);
+  line-height: 1.6;
 }
 
 .flex {

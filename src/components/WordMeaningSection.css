@@ -1,6 +1,7 @@
 .word-wrapper {
     display: grid;
     gap: 2.5rem;
+    overflow-y: auto;
 }
 
 .word {
@@ -49,6 +50,7 @@
 
 .definition {
     font-size: .9375rem;
+    color: var(--clr-text);
 }
 
 .part-of-speach::after {
