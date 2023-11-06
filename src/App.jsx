@@ -10,12 +10,12 @@ function App() {
   async function searchWordMeaning(word) {
       try {
         const response = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
-      if (response.ok) {
-        const wordMeaning = await response.json();
-        setGetword(wordMeaning[0]);    
-      }
+        if (response.ok) {
+          const wordMeaning = await response.json();
+          setGetword(wordMeaning[0]);    
+        }
 
-      } catch(error) {
+      } catch {
         setGetword(null);
       }       
   }

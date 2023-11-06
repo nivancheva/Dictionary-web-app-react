@@ -2,13 +2,13 @@
     width: 100%;
     border: 0;
     outline: none;
-    background-color: var(--clr-grey-300);
+    background-color: var(--clr-input-background);
     border-radius: .75em;
     padding-block: 1.25rem;
     padding-left: 1.5rem;
     font-size: 1.25rem;
     font-weight: 700;
-    color: var(--clr-dark-700);
+    color: var(--clr-input-text);
     text-transform: lowercase;
 }
 

@@ -2,11 +2,6 @@
     margin-inline: 1.5rem;    
 }
 
-.dark-mode {
-    background-color: var( --clr-black);
-    color: var(--clr-white);
-}
-
 @media (min-width:768px) {
     .container {
         margin-inline: 2.5rem; 

@@ -1,31 +1,34 @@
 import './InputWord.css';
 import SearchIcon from '../assets/images/icon-search.svg';
 import { useState } from 'react';
+import { useForm } from "react-hook-form";
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+
+const schema = yup.object({
+    searchWord: yup.string().required('Whoops, can’t be empty…'),
+}).required();
 
 export default function InputWord({onSubmit}) {
-    const [word, setWord] = useState('');
+    const { register,handleSubmit, formState:{ errors } } = useForm({
+        resolver: yupResolver(schema)
+    });
 
-    function getWord(e) {
-        setWord(e.target.value);
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault();
-        onSubmit(word);
+    function manageSubmit(data) {
+        onSubmit(data.searchWord);
     }
 
     return (
-        <form onSubmit={handleSubmit} className='input'>
+        <form onSubmit={handleSubmit(manageSubmit)} className='input'>
             <input 
-                className='input_word'
-                type='text'
+                {...register("searchWord")}
+                className={`input_word${errors.searchWord?.message ? " inputIfError" : ""}`}
                 placeholder="Search for any word..."
-                value={word}
-                onChange={getWord}
             />
             <button>
                 <img className='search-icon' src={SearchIcon}/>
             </button>
+            {errors.searchWord?.message && <p className='errors'>{errors.searchWord?.message}</p>}
         </form>
     )
 }

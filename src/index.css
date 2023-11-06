@@ -60,8 +60,21 @@
   --clr-dark-800: rgb(31, 31, 31);
   --clr-dark-700: rgb(45, 45, 45);
   --clr-dark-600: rgb(58, 58, 58);
+
+  --clr-background: var(--clr-white);
+  --clr-text: var(--clr-black);
+  --clr-input-background: var(--clr-grey-300);
+  --clr-input-text: var(--clr-dark-700);
+
+  
 }
 
+.dark-mode {
+  --clr-text: var(--clr-white);
+  --clr-background: var(--clr-black);
+  --clr-input-background: var(--clr-dark-800);
+  --clr-input-text: var(--clr-white);
+}
 
 * {
   margin: 0;
@@ -80,6 +93,9 @@ input, button, textarea, select {
 body {
   font-family: 'Inter';
   min-height: 100vh;
+  
+  color: var(--clr-text);
+  background-color: var(--clr-background);
 }
 
 .flex {
