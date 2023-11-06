@@ -10,9 +10,9 @@ export default function WordMeaningSection({word}) {
                     <div className='word flex'>
                         <div>
                             <p className='input-word'>{word.word}</p>
-                            <p className='input-word_pronunciation'>{word.phonetics[1].text}</p>
+                            <p className='input-word_pronunciation'>{word.phonetics[0].text}</p>
                         </div>
-                        <ButtonPlay audioUrl={word.phonetics[1].audio} />
+                        <ButtonPlay audioUrl={word.phonetics[0].audio} />
                     </div>
 
                     <div className='word-wrapper'>
@@ -58,7 +58,7 @@ export default function WordMeaningSection({word}) {
                     <div className='flex word_source'>
                         <p className='meaning-heading'>Source</p>
                         <div className='flex'>
-                            <a href={word.phonetics[1].sourceUrl}>{word.phonetics[1].sourceUrl}</a>
+                            <a href={word.phonetics[0].sourceUrl}>{word.phonetics[0].sourceUrl}</a>
                             <img className='icon_newwindow' src={iconNewWindow}/>
                         </div>
                     </div>
