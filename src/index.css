@@ -66,7 +66,9 @@
   --clr-input-background: var(--clr-grey-300);
   --clr-input-text: var(--clr-dark-700);
 
-  
+  --ff-sans-serif: 'Inter';
+  --ff-serif: 'Lora';
+  --ff-mono: 'Inconsolta';
 }
 
 .dark-mode {
@@ -74,6 +76,18 @@
   --clr-background: var(--clr-black);
   --clr-input-background: var(--clr-dark-800);
   --clr-input-text: var(--clr-white);
+}
+
+.font-sans-serif {
+  font-family: var(--ff-sans-serif);
+}
+
+.font-serif {
+  font-family: var(--ff-serif);
+}
+
+.font-mono {
+  font-family: var(--ff-mono);
 }
 
 * {
@@ -91,7 +105,6 @@ input, button, textarea, select {
 }
 
 body {
-  font-family: 'Inter';
   min-height: 100vh;
   
   color: var(--clr-text);

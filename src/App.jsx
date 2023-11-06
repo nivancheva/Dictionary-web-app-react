@@ -6,6 +6,11 @@ import { useState } from 'react';
 
 function App() {
   const [getWord, setGetword] = useState();
+  const [font, setFont] = useState('sans-serif');
+
+  function changeFont(newFont) {
+    setFont(newFont);
+  }
 
   async function searchWordMeaning(word) {
       try {
@@ -26,9 +31,9 @@ function App() {
 
 
   return (
-    <div className='container'>
+    <div className={`container font-${font}`}>
       
-      <Navigation />
+      <Navigation font={font} changeFont={changeFont}/>
 
       <InputWord onSubmit={handleSubmit} />
 

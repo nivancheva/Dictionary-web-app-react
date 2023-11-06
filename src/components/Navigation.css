@@ -12,6 +12,17 @@
     position: relative;
 }
 
+.font-family-style {
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+    position: relative;
+}
+
+.font-family-style
+
 .font-family::after {
     content: '';
     position: absolute;
