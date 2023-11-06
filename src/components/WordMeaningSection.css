@@ -97,6 +97,10 @@
     font-size: .875rem;
 }
 
+.word_source a {
+    word-break: break-all;
+}
+
 .icon_newwindow {
     margin-left: 8px;
 }
